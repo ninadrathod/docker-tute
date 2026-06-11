@@ -324,15 +324,146 @@
       color: var(--text-muted); font-size: .82rem; text-align: center;
     }
 
-    /* ── Responsive ── */
+    /* ── Scroll padding so anchor links clear the fixed header ── */
+    html { scroll-padding-top: calc(var(--header-h) + 10px); }
+
+    /* ── Sidebar overlay (mobile backdrop) ── */
+    .sidebar-overlay {
+      display: none;
+      position: fixed; inset: 0; z-index: 85;
+      background: rgba(0,0,0,.65);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      transition: opacity .3s;
+    }
+    .sidebar-overlay.open { display: block; }
+
+    /* ── Hamburger open → X animation ── */
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .hamburger span { transition: transform .3s, opacity .3s; }
+
+    /* ── Tables: make horizontally scrollable ── */
+    .compare-table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+    }
+    .compare-table th, .compare-table td { white-space: normal; }
+
+    /* ════════════════════════════════
+       TABLET  (769px – 1100px)
+    ════════════════════════════════ */
+    @media (max-width: 1100px) and (min-width: 769px) {
+      :root { --sidebar-w: 230px; }
+      .main { padding: 40px 32px; max-width: 100%; }
+      .footer { padding: 24px 32px; }
+      .section h2 { font-size: 1.75rem; }
+      pre { font-size: .85rem; padding: 16px 18px; }
+      .toc-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+    }
+
+    /* ════════════════════════════════
+       MOBILE  (≤ 768px)
+    ════════════════════════════════ */
     @media (max-width: 768px) {
-      .sidebar { transform: translateX(-100%); }
-      .sidebar.open { transform: translateX(0); }
-      .main { margin-left: 0; padding: 24px 20px; }
-      .footer { margin-left: 0; }
+      /* Sidebar: slide off-screen, slide in when .open */
+      .sidebar {
+        transform: translateX(-100%);
+        box-shadow: none;
+        width: min(280px, 80vw);
+      }
+      .sidebar.open {
+        transform: translateX(0);
+        box-shadow: 6px 0 32px rgba(0,0,0,.6);
+      }
+
+      /* Layout & main */
+      .main {
+        margin-left: 0;
+        padding: 20px 16px 40px;
+        max-width: 100%;
+      }
+      .footer { margin-left: 0; padding: 20px 16px; }
       .progress-bar { left: 0; }
-      .hamburger { display: flex; }
-      .top-header h1 { font-size: 1rem; }
+
+      /* Header */
+      .top-header { padding: 0 14px; gap: 0; }
+      .top-header .logo { gap: 10px; }
+      .top-header .logo svg { width: 32px; height: 32px; flex-shrink: 0; }
+      .top-header h1 { font-size: .92rem; line-height: 1.2; }
+      .top-header .subtitle { display: none; }
+      .hamburger { display: flex; margin-left: auto; }
+
+      /* Section typography */
+      .section { margin-bottom: 56px; }
+      .section h2 { font-size: 1.45rem; }
+      .section-intro { font-size: .92rem; margin-bottom: 24px; }
+      h3 { font-size: 1.08rem; margin: 24px 0 10px; }
+      h4 { font-size: .95rem; margin: 16px 0 8px; }
+      p  { font-size: .92rem; }
+
+      /* TOC grid */
+      .toc-grid { grid-template-columns: 1fr 1fr; gap: 8px; margin: 20px 0; }
+      .toc-card { padding: 11px 12px; gap: 8px; }
+      .toc-card .tc-num { font-size: 1.1rem; min-width: 28px; }
+      .toc-card .tc-title { font-size: .8rem; }
+
+      /* Code blocks */
+      pre { padding: 14px 14px; font-size: .78rem; border-radius: 0 0 8px 8px; }
+      code { font-size: .78rem; }
+      :not(pre) > code { font-size: .78rem; padding: 2px 5px; }
+      .cmd-label { padding: 7px 12px; font-size: .7rem; gap: 6px; }
+
+      /* Callout boxes */
+      .callout { padding: 13px 14px; }
+      .callout p { font-size: .88rem; }
+
+      /* Diagram boxes */
+      .diagram-wrap { padding: 12px 8px; margin: 16px 0; }
+      .diagram-wrap figcaption { font-size: .73rem; }
+
+      /* Tables */
+      .compare-table th { padding: 10px 10px; font-size: .78rem; }
+      .compare-table td { padding: 9px 10px;  font-size: .8rem; }
+
+      /* Steps */
+      .steps li { gap: 12px; }
+      .steps li::before { min-width: 28px; height: 28px; font-size: .76rem; }
+
+      /* Def list */
+      .def-list dt { font-size: .88rem; }
+      .def-list dd { font-size: .84rem; margin-left: 10px; }
+
+      /* Quiz blocks */
+      .quiz-block { padding: 15px 14px; margin-bottom: 12px; }
+      .quiz-q { font-size: .88rem; margin-bottom: 12px; }
+      .quiz-q .q-num { width: 24px; height: 24px; font-size: .7rem; margin-right: 8px; }
+      .quiz-options li { padding: 11px 12px; font-size: .84rem; }
+      .quiz-answer summary { font-size: .82rem; padding: 8px 12px; }
+      .quiz-answer .answer-body { padding: 12px 14px; }
+      .answer-correct { font-size: .85rem; }
+      .answer-explain { font-size: .83rem; }
+      .quiz-section-title { font-size: 1rem; padding: 9px 14px; margin: 32px 0 16px; }
+
+      /* Back to top */
+      .back-top { font-size: .78rem; padding: 7px 14px; }
+    }
+
+    /* ════════════════════════════════
+       SMALL MOBILE  (≤ 380px)
+    ════════════════════════════════ */
+    @media (max-width: 380px) {
+      .top-header h1 { font-size: .82rem; }
+      .top-header .logo svg { width: 28px; height: 28px; }
+      .section h2 { font-size: 1.25rem; }
+      .toc-grid { grid-template-columns: 1fr; }
+      .toc-card .tc-num { font-size: 1rem; }
+      pre { font-size: .73rem; }
+      .quiz-block { padding: 13px 11px; }
+      .diagram-wrap { padding: 8px 4px; }
     }
 
     /* ── Inline badge ── */
@@ -375,6 +506,9 @@
 
 <!-- ═══════════════════ PROGRESS BAR ═══════════════════ -->
 <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- ═══════════════════ SIDEBAR OVERLAY (mobile) ═══════════════════ -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 
 <!-- ═══════════════════ LAYOUT ═══════════════════ -->
 <div class="layout">
@@ -3670,18 +3804,41 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
 
   sections.forEach(s => observer.observe(s));
 
-  // Hamburger menu
+  // Hamburger & sidebar
   const hamburger = document.getElementById('hamburger');
-  const sidebar = document.getElementById('sidebar');
+  const sidebar   = document.getElementById('sidebar');
+  const overlay   = document.getElementById('sidebarOverlay');
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    overlay.classList.add('open');
+    hamburger.classList.add('open');
+    document.body.style.overflow = 'hidden'; // prevent background scroll
+  }
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
   hamburger.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
   });
 
-  // Close sidebar on link click (mobile)
+  // Close on overlay click
+  overlay.addEventListener('click', closeSidebar);
+
+  // Close on link click (mobile)
   sidebarLinks.forEach(link => {
     link.addEventListener('click', () => {
-      sidebar.classList.remove('open');
+      if (window.innerWidth <= 768) closeSidebar();
     });
+  });
+
+  // Close sidebar on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeSidebar();
   });
 </script>
 </body>
