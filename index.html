@@ -329,39 +329,42 @@
 
     /* ── Sidebar overlay (mobile backdrop) ── */
     .sidebar-overlay {
-      display: none;
-      position: fixed; inset: 0; z-index: 85;
-      background: rgba(0,0,0,.65);
-      backdrop-filter: blur(2px);
-      -webkit-backdrop-filter: blur(2px);
-      transition: opacity .3s;
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.45); z-index: 85;
+      opacity: 0; transition: opacity .3s;
     }
-    .sidebar-overlay.open { display: block; }
+    .sidebar-overlay.visible { display: block; opacity: 1; }
+
+    /* ── Hamburger span transitions ── */
+    .hamburger span { transition: transform .3s, opacity .3s; }
 
     /* ── Hamburger open → X animation ── */
     .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-    .hamburger span { transition: transform .3s, opacity .3s; }
 
-    /* ── Tables: make horizontally scrollable ── */
-    .compare-table {
-      display: block;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      white-space: nowrap;
-    }
-    .compare-table th, .compare-table td { white-space: normal; }
+    /* ── Inline code: wrap long strings instead of overflowing ── */
+    :not(pre) > code { word-break: break-word; }
+
+    /* ── Diagram SVGs: always block + scale correctly ── */
+    .diagram-wrap svg { display: block; max-width: 100%; height: auto; }
+
+    /* ── pre: momentum scrolling on iOS ── */
+    pre { -webkit-overflow-scrolling: touch; }
+
+    /* ── Tables: scrollable wrapper approach (desktop safe) ── */
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 20px 0; }
+    .compare-table { width: 100%; min-width: 480px; }
 
     /* ════════════════════════════════
        TABLET  (769px – 1100px)
     ════════════════════════════════ */
-    @media (max-width: 1100px) and (min-width: 769px) {
+    @media (min-width: 769px) and (max-width: 1100px) {
       :root { --sidebar-w: 230px; }
-      .main { padding: 40px 32px; max-width: 100%; }
+      .main { padding: 36px 32px; max-width: 100%; }
       .footer { padding: 24px 32px; }
       .section h2 { font-size: 1.75rem; }
-      pre { font-size: .85rem; padding: 16px 18px; }
+      pre { font-size: .82rem; }
       .toc-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
     }
 
@@ -369,101 +372,101 @@
        MOBILE  (≤ 768px)
     ════════════════════════════════ */
     @media (max-width: 768px) {
-      /* Sidebar: slide off-screen, slide in when .open */
-      .sidebar {
-        transform: translateX(-100%);
-        box-shadow: none;
-        width: min(280px, 80vw);
-      }
-      .sidebar.open {
-        transform: translateX(0);
-        box-shadow: 6px 0 32px rgba(0,0,0,.6);
-      }
-
-      /* Layout & main */
-      .main {
-        margin-left: 0;
-        padding: 20px 16px 40px;
-        max-width: 100%;
-      }
-      .footer { margin-left: 0; padding: 20px 16px; }
-      .progress-bar { left: 0; }
+      /* Shrink header height — frees precious viewport space */
+      :root { --header-h: 56px; }
 
       /* Header */
-      .top-header { padding: 0 14px; gap: 0; }
-      .top-header .logo { gap: 10px; }
-      .top-header .logo svg { width: 32px; height: 32px; flex-shrink: 0; }
-      .top-header h1 { font-size: .92rem; line-height: 1.2; }
+      .top-header { padding: 0 14px; gap: 10px; }
+      .top-header .logo { gap: 8px; }
+      .top-header .logo svg { width: 26px; height: 26px; flex-shrink: 0; }
+      .top-header h1 { font-size: 1rem; }
       .top-header .subtitle { display: none; }
-      .hamburger { display: flex; margin-left: auto; }
+      .hamburger { display: flex; }
+
+      /* Sidebar: slide off-screen, slide back in */
+      .sidebar { transform: translateX(-100%); box-shadow: none; }
+      .sidebar.open { transform: translateX(0); box-shadow: 8px 0 32px rgba(0,0,0,.18); }
+
+      /* Progress bar spans full width */
+      .progress-bar { left: 0; }
+
+      /* Main area */
+      .main { margin-left: 0; padding: 20px 16px 40px; max-width: 100%; }
+      .footer { margin-left: 0; padding: 20px 16px; }
 
       /* Section typography */
-      .section { margin-bottom: 56px; }
-      .section h2 { font-size: 1.45rem; }
-      .section-intro { font-size: .92rem; margin-bottom: 24px; }
-      h3 { font-size: 1.08rem; margin: 24px 0 10px; }
-      h4 { font-size: .95rem; margin: 16px 0 8px; }
+      .section { margin-bottom: 52px; }
+      .section h2 { font-size: 1.5rem; line-height: 1.25; }
+      .section-intro { font-size: .92rem; margin-bottom: 22px; }
+      h3 { font-size: 1.05rem; margin: 22px 0 8px; }
+      h4 { font-size: .92rem; margin: 16px 0 8px; }
       p  { font-size: .92rem; }
 
-      /* TOC grid */
-      .toc-grid { grid-template-columns: 1fr 1fr; gap: 8px; margin: 20px 0; }
+      /* TOC grid — 2 columns on mobile */
+      .toc-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
       .toc-card { padding: 11px 12px; gap: 8px; }
-      .toc-card .tc-num { font-size: 1.1rem; min-width: 28px; }
+      .toc-card .tc-num { font-size: 1.1rem; min-width: 26px; }
       .toc-card .tc-title { font-size: .8rem; }
 
       /* Code blocks */
-      pre { padding: 14px 14px; font-size: .78rem; border-radius: 0 0 8px 8px; }
-      code { font-size: .78rem; }
-      :not(pre) > code { font-size: .78rem; padding: 2px 5px; }
+      pre { font-size: .76rem; padding: 12px 14px; border-radius: 8px; }
+      pre code { font-size: inherit; }
       .cmd-label { padding: 7px 12px; font-size: .7rem; gap: 6px; }
+      .cmd-label + pre { border-radius: 0 0 8px 8px; }
+      :not(pre) > code { font-size: .8rem; }
 
       /* Callout boxes */
-      .callout { padding: 13px 14px; }
-      .callout p { font-size: .88rem; }
+      .callout { padding: 12px 14px; font-size: .86rem; }
+      .callout p { font-size: .86rem; }
 
-      /* Diagram boxes */
-      .diagram-wrap { padding: 12px 8px; margin: 16px 0; }
-      .diagram-wrap figcaption { font-size: .73rem; }
+      /* Diagrams — scroll rather than compress */
+      .diagram-wrap { padding: 12px 10px 8px; margin: 16px 0; }
+      .diagram-wrap svg { max-width: none; height: auto; }
+      .diagram-wrap figcaption { font-size: .72rem; }
 
       /* Tables */
-      .compare-table th { padding: 10px 10px; font-size: .78rem; }
-      .compare-table td { padding: 9px 10px;  font-size: .8rem; }
+      .compare-table { font-size: .8rem; }
+      .compare-table th { padding: 8px 10px; font-size: .78rem; }
+      .compare-table td { padding: 8px 10px; }
 
       /* Steps */
       .steps li { gap: 12px; }
-      .steps li::before { min-width: 28px; height: 28px; font-size: .76rem; }
+      .steps li::before { min-width: 28px; height: 28px; font-size: .78rem; }
 
       /* Def list */
       .def-list dt { font-size: .88rem; }
-      .def-list dd { font-size: .84rem; margin-left: 10px; }
+      .def-list dd { font-size: .84rem; margin-left: 8px; }
 
       /* Quiz blocks */
-      .quiz-block { padding: 15px 14px; margin-bottom: 12px; }
-      .quiz-q { font-size: .88rem; margin-bottom: 12px; }
+      .quiz-block { padding: 16px 14px; margin-bottom: 12px; }
+      .quiz-q { font-size: .88rem; line-height: 1.5; margin-bottom: 12px; }
       .quiz-q .q-num { width: 24px; height: 24px; font-size: .7rem; margin-right: 8px; }
-      .quiz-options li { padding: 11px 12px; font-size: .84rem; }
-      .quiz-answer summary { font-size: .82rem; padding: 8px 12px; }
+      .quiz-options li {
+        padding: 11px 12px; font-size: .84rem; line-height: 1.45;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .quiz-answer summary { font-size: .82rem; padding: 11px 14px; }
       .quiz-answer .answer-body { padding: 12px 14px; }
       .answer-correct { font-size: .85rem; }
       .answer-explain { font-size: .83rem; }
-      .quiz-section-title { font-size: 1rem; padding: 9px 14px; margin: 32px 0 16px; }
+      .quiz-section-title { font-size: .95rem; padding: 9px 14px; margin: 32px 0 16px; }
 
-      /* Back to top */
+      /* Back to top link */
       .back-top { font-size: .78rem; padding: 7px 14px; }
     }
 
     /* ════════════════════════════════
-       SMALL MOBILE  (≤ 380px)
+       SMALL PHONES  (≤ 420px)
     ════════════════════════════════ */
-    @media (max-width: 380px) {
-      .top-header h1 { font-size: .82rem; }
-      .top-header .logo svg { width: 28px; height: 28px; }
-      .section h2 { font-size: 1.25rem; }
+    @media (max-width: 420px) {
+      .top-header h1 { font-size: .9rem; }
+      .top-header .logo svg { width: 24px; height: 24px; }
+      .section h2 { font-size: 1.35rem; }
       .toc-grid { grid-template-columns: 1fr; }
-      .toc-card .tc-num { font-size: 1rem; }
-      pre { font-size: .73rem; }
-      .quiz-block { padding: 13px 11px; }
-      .diagram-wrap { padding: 8px 4px; }
+      pre { font-size: .7rem; }
+      .compare-table th, .compare-table td { padding: 6px 8px; font-size: .75rem; }
+      .quiz-options li { padding: 10px 10px; }
+      .diagram-wrap { padding: 8px 6px; }
     }
 
     /* ── Inline badge ── */
@@ -1039,6 +1042,7 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
   </div>
 
   <h3>Side-by-Side Comparison</h3>
+  <div class="table-scroll">
   <table class="compare-table">
     <thead>
       <tr><th>Feature</th><th>Virtual Machine</th><th>Docker Container</th></tr>
@@ -1054,6 +1058,7 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
       <tr><td>Use case</td><td>Full OS isolation, run Windows on Linux</td><td class="tick">Microservices, CI/CD, dev environments</td></tr>
     </tbody>
   </table>
+  </div>
 
   <h3>How Linux Namespaces Enable Isolation</h3>
   <p>Linux <strong>namespaces</strong> are the magic behind containers. They give each container its own isolated view of the system:</p>
@@ -1303,6 +1308,7 @@ docker run hello-world
   </ol>
 
   <h3>Understanding: <code>docker version</code> vs <code>docker info</code></h3>
+  <div class="table-scroll">
   <table class="compare-table">
     <thead><tr><th>Command</th><th>What it shows</th></tr></thead>
     <tbody>
@@ -1310,6 +1316,7 @@ docker run hello-world
       <tr><td><code>docker info</code></td><td>Number of containers/images, storage driver, cgroup driver, OS, memory, CPUs, registry URL</td></tr>
     </tbody>
   </table>
+  </div>
 
   <!-- QUIZ S4 -->
   <div class="quiz-section-title">🧠 Quiz — Section 4: Installing Docker (5 Questions)</div>
@@ -2754,6 +2761,7 @@ docker run -d \
   nginx</code></pre>
 
   <h3>Comparison: Volumes vs Bind Mounts</h3>
+  <div class="table-scroll">
   <table class="compare-table">
     <thead><tr><th>Feature</th><th>Named Volume</th><th>Bind Mount</th></tr></thead>
     <tbody>
@@ -2764,6 +2772,7 @@ docker run -d \
       <tr><td>Backup</td><td class="tick">Easy via Docker commands</td><td>Manual host backup</td></tr>
     </tbody>
   </table>
+  </div>
 
   <!-- QUIZ S9 -->
   <div class="quiz-section-title">🧠 Quiz — Section 9: Docker Volumes (8 Questions)</div>
@@ -3811,13 +3820,13 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
 
   function openSidebar() {
     sidebar.classList.add('open');
-    overlay.classList.add('open');
+    overlay.classList.add('visible');
     hamburger.classList.add('open');
-    document.body.style.overflow = 'hidden'; // prevent background scroll
+    document.body.style.overflow = 'hidden';
   }
   function closeSidebar() {
     sidebar.classList.remove('open');
-    overlay.classList.remove('open');
+    overlay.classList.remove('visible');
     hamburger.classList.remove('open');
     document.body.style.overflow = '';
   }
