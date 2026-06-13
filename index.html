@@ -648,14 +648,14 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
     <div class="quiz-q"><span class="q-num">1</span>What is the primary role of an Operating System?</div>
     <ul class="quiz-options">
       <li>A) A type of programming language used to build apps</li>
-      <li>B) Software that manages computer hardware and provides services for programs</li>
-      <li>C) A network protocol for communicating over the internet</li>
+      <li>B) A network protocol for communicating over the internet</li>
+      <li>C) Software that manages computer hardware and provides services for programs</li>
       <li>D) A type of database management system</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">The Operating System (OS) is the software layer that manages hardware resources (CPU, RAM, disk, network) and provides a platform for applications to run on. Programming languages, databases, and network protocols are separate concepts built on top of the OS.</div>
       </div>
     </details>
@@ -664,15 +664,15 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">2</span>What is a "process" in computing?</div>
     <ul class="quiz-options">
-      <li>A) A step in a project management plan</li>
-      <li>B) A physical component inside a CPU</li>
-      <li>C) A running instance of a program in memory</li>
+      <li>A) A running instance of a program in memory</li>
+      <li>B) A step in a project management plan</li>
+      <li>C) A physical component inside a CPU</li>
       <li>D) A type of computer network connection</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">A process is a program that has been loaded into memory and is currently executing. The OS manages multiple processes simultaneously, giving each one allocated CPU time and memory. For example, opening a browser creates one or more processes.</div>
       </div>
     </details>
@@ -682,14 +682,14 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
     <div class="quiz-q"><span class="q-num">3</span>A network port is best described as:</div>
     <ul class="quiz-options">
       <li>A) A physical connector (like USB or HDMI) on a computer</li>
-      <li>B) A logical endpoint identified by a number that directs traffic to a specific application</li>
-      <li>C) A type of network cable used in data centers</li>
-      <li>D) A wireless networking standard like Wi-Fi</li>
+      <li>B) A type of network cable used in data centers</li>
+      <li>C) A wireless networking standard like Wi-Fi</li>
+      <li>D) A logical endpoint identified by a number that directs traffic to a specific application</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Ports are logical (not physical) endpoints numbered from 0 to 65,535. They allow a single computer (with one IP address) to run many services simultaneously. For example, port 80 routes traffic to your web server while port 22 routes to SSH.</div>
       </div>
     </details>
@@ -699,14 +699,14 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
     <div class="quiz-q"><span class="q-num">4</span>In a client-server model, which of the following best describes a "server"?</div>
     <ul class="quiz-options">
       <li>A) A person employed at a restaurant</li>
-      <li>B) Only the physical machine in a data center</li>
-      <li>C) A program or system that listens for and responds to requests from clients</li>
+      <li>B) A program or system that listens for and responds to requests from clients</li>
+      <li>C) Only the physical machine in a data center</li>
       <li>D) The web browser you use to visit websites</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">A "server" in software is any program that provides services. It doesn't have to be a physical machine — your laptop running a local development web server IS a server. The key characteristic is: it listens on a port and responds to client requests.</div>
       </div>
     </details>
@@ -715,15 +715,15 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">5</span>What is the main advantage of using environment variables to configure applications?</div>
     <ul class="quiz-options">
-      <li>A) They make the application run faster by caching data</li>
-      <li>B) They allow configuring applications for different environments without changing code</li>
+      <li>A) They allow configuring applications for different environments without changing code</li>
+      <li>B) They make the application run faster by caching data</li>
       <li>C) They store images and binary files efficiently</li>
       <li>D) They replace the need for a database</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">Environment variables separate configuration from code. The same application binary can connect to a dev database in development and a production database in production — simply by changing the DATABASE_URL environment variable. This is a core 12-factor app principle that Docker leverages extensively.</div>
       </div>
     </details>
@@ -827,14 +827,14 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
     <div class="quiz-q"><span class="q-num">6</span>What is the primary problem that Docker was designed to solve?</div>
     <ul class="quiz-options">
       <li>A) Making computers run faster by optimizing the CPU</li>
-      <li>B) Inconsistent environments causing software to behave differently across machines</li>
-      <li>C) Creating new programming languages for cloud development</li>
-      <li>D) Managing database schemas across teams</li>
+      <li>B) Creating new programming languages for cloud development</li>
+      <li>C) Managing database schemas across teams</li>
+      <li>D) Inconsistent environments causing software to behave differently across machines</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Docker's core value proposition is environment consistency. By packaging an application with all its dependencies into a container, the "works on my machine" problem is eliminated. The same container runs identically in development, CI/CD pipelines, and production.</div>
       </div>
     </details>
@@ -878,14 +878,14 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
     <div class="quiz-q"><span class="q-num">9</span>Which real-world analogy best describes how Docker containers work?</div>
     <ul class="quiz-options">
       <li>A) Postal envelopes — different sizes for different contents</li>
-      <li>B) Standardized shipping containers — uniform box that fits on any transport</li>
-      <li>C) Filing cabinets — store documents in ordered drawers</li>
-      <li>D) Telephone lines — dedicated point-to-point connections</li>
+      <li>B) Filing cabinets — store documents in ordered drawers</li>
+      <li>C) Telephone lines — dedicated point-to-point connections</li>
+      <li>D) Standardized shipping containers — uniform box that fits on any transport</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Just like standardized shipping containers revolutionized global trade by providing a uniform unit that fits any ship, truck, or train, Docker containers provide a uniform unit for software that runs on any machine with Docker installed — regardless of the underlying OS or configuration.</div>
       </div>
     </details>
@@ -894,15 +894,15 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">10</span>The phrase "works on my machine" refers to which software development problem?</div>
     <ul class="quiz-options">
-      <li>A) A software license that only allows use on one machine</li>
-      <li>B) A situation where software runs correctly in development but fails in other environments</li>
+      <li>A) A situation where software runs correctly in development but fails in other environments</li>
+      <li>B) A software license that only allows use on one machine</li>
       <li>C) A cloud computing pricing model</li>
       <li>D) A type of software bug that only appears once</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">This classic problem occurs because different machines have different OS versions, library versions, environment configurations, etc. Code that works in a developer's environment may fail in staging or production due to these differences. Docker eliminates this by ensuring every environment uses the exact same container.</div>
       </div>
     </details>
@@ -912,14 +912,14 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
     <div class="quiz-q"><span class="q-num">11</span>Docker is primarily written in which programming language?</div>
     <ul class="quiz-options">
       <li>A) Python</li>
-      <li>B) Java</li>
-      <li>C) Go (Golang)</li>
+      <li>B) Go (Golang)</li>
+      <li>C) Java</li>
       <li>D) C++</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">Docker is written in Go (Golang), a language developed at Google known for its speed, concurrency support, and ability to compile to single static binaries. This makes Docker efficient and easy to distribute. Many other container ecosystem tools (Kubernetes, Prometheus, Terraform) are also written in Go.</div>
       </div>
     </details>
@@ -945,15 +945,15 @@ db = os.getenv("DATABASE_URL")   # reads the value</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">13</span>Docker containers share which resource with the host machine?</div>
     <ul class="quiz-options">
-      <li>A) The RAM only — containers cannot use disk at all</li>
-      <li>B) Nothing — containers are fully isolated from the host</li>
-      <li>C) The operating system kernel</li>
+      <li>A) The operating system kernel</li>
+      <li>B) The RAM only — containers cannot use disk at all</li>
+      <li>C) Nothing — containers are fully isolated from the host</li>
       <li>D) The CPU brand and model number</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">Unlike VMs which run their own kernel, Docker containers share the host's OS kernel. This is what makes containers so lightweight and fast. The isolation (namespaces) makes each container think it has its own system, but they all talk to the same underlying kernel.</div>
       </div>
     </details>
@@ -1091,14 +1091,14 @@ docker run --memory="512m" --cpus="0.5" nginx
     <div class="quiz-q"><span class="q-num">14</span>What technology does a Virtual Machine use to simulate hardware and run multiple OS instances?</div>
     <ul class="quiz-options">
       <li>A) Docker Engine</li>
-      <li>B) A Hypervisor</li>
-      <li>C) A Load Balancer</li>
-      <li>D) A DNS Server</li>
+      <li>B) A Load Balancer</li>
+      <li>C) A DNS Server</li>
+      <li>D) A Hypervisor</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">A hypervisor (also called a Virtual Machine Monitor) is the software layer that enables virtualization. It sits between the hardware and the guest OS, translating hardware calls. Examples include VMware ESXi, Microsoft Hyper-V, KVM, and VirtualBox.</div>
       </div>
     </details>
@@ -1124,15 +1124,15 @@ docker run --memory="512m" --cpus="0.5" nginx
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">16</span>Compared to Virtual Machines, Docker containers are generally:</div>
     <ul class="quiz-options">
-      <li>A) Slower to start and use more resources</li>
-      <li>B) More isolated due to hardware virtualization</li>
-      <li>C) Lighter weight and faster to start</li>
+      <li>A) Lighter weight and faster to start</li>
+      <li>B) Slower to start and use more resources</li>
+      <li>C) More isolated due to hardware virtualization</li>
       <li>D) Require installing a full OS in each instance</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">Because containers share the host kernel and don't include a full OS, they start in seconds (or less) vs minutes for VMs. A Docker image for a Node.js app might be 50MB, while an equivalent VM image could be 5GB+. This efficiency enables running many more containers per server.</div>
       </div>
     </details>
@@ -1142,14 +1142,14 @@ docker run --memory="512m" --cpus="0.5" nginx
     <div class="quiz-q"><span class="q-num">17</span>A typical Virtual Machine image file is approximately what size?</div>
     <ul class="quiz-options">
       <li>A) A few kilobytes</li>
-      <li>B) A few megabytes</li>
-      <li>C) Several gigabytes</li>
+      <li>B) Several gigabytes</li>
+      <li>C) A few megabytes</li>
       <li>D) Several terabytes</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">A VM image includes the full OS installation plus applications, typically ranging from 2GB to 40GB+. An Ubuntu VM image alone is about 2.5GB. Compare this to the official Ubuntu Docker image which is only about 28MB because it doesn't include the kernel.</div>
       </div>
     </details>
@@ -1159,14 +1159,14 @@ docker run --memory="512m" --cpus="0.5" nginx
     <div class="quiz-q"><span class="q-num">18</span>Which provides stronger, hardware-level isolation?</div>
     <ul class="quiz-options">
       <li>A) Docker containers</li>
-      <li>B) Virtual Machines</li>
-      <li>C) Both provide exactly the same level of isolation</li>
-      <li>D) Neither provides any meaningful isolation</li>
+      <li>B) Both provide exactly the same level of isolation</li>
+      <li>C) Neither provides any meaningful isolation</li>
+      <li>D) Virtual Machines</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">VMs provide stronger isolation because they emulate separate hardware. A compromised VM kernel cannot affect the host or other VMs. Containers share the host kernel, so a kernel exploit in one container could theoretically affect others. For untrusted workloads (like running user-submitted code), VMs are still preferred.</div>
       </div>
     </details>
@@ -1176,14 +1176,14 @@ docker run --memory="512m" --cpus="0.5" nginx
     <div class="quiz-q"><span class="q-num">19</span>Containers achieve process and filesystem isolation using which Linux kernel features?</div>
     <ul class="quiz-options">
       <li>A) Hardware virtualization extensions (VT-x)</li>
-      <li>B) Linux namespaces and cgroups</li>
-      <li>C) Separate physical network cards</li>
+      <li>B) Separate physical network cards</li>
+      <li>C) Linux namespaces and cgroups</li>
       <li>D) Different CPU cores assigned per app</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain"><strong>Namespaces</strong> provide isolation (each container has its own view of PIDs, networking, filesystems). <strong>Cgroups</strong> provide resource limits (CPU, memory). These are pure software features of the Linux kernel — no special hardware needed beyond what any Linux system has.</div>
       </div>
     </details>
@@ -1193,14 +1193,14 @@ docker run --memory="512m" --cpus="0.5" nginx
     <div class="quiz-q"><span class="q-num">20</span>Which of the following is NOT a typical advantage of containers over VMs?</div>
     <ul class="quiz-options">
       <li>A) Faster startup time</li>
-      <li>B) Smaller image sizes</li>
-      <li>C) Full hardware-level kernel isolation from the host</li>
+      <li>B) Full hardware-level kernel isolation from the host</li>
+      <li>C) Smaller image sizes</li>
       <li>D) Highly portable across different environments</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">Full hardware-level kernel isolation is NOT a feature of containers — that's the advantage of VMs. Containers share the host kernel (providing only OS-level isolation via namespaces). Faster startup, smaller sizes, and portability ARE genuine container advantages over VMs.</div>
       </div>
     </details>
@@ -1210,14 +1210,14 @@ docker run --memory="512m" --cpus="0.5" nginx
     <div class="quiz-q"><span class="q-num">21</span>What does "cgroups" stand for in the context of Linux?</div>
     <ul class="quiz-options">
       <li>A) Container groups — a Docker-specific term</li>
-      <li>B) Control groups — a Linux kernel feature for resource management</li>
-      <li>C) Cloud groups — a cloud provider term</li>
-      <li>D) CPU groups — only related to processor allocation</li>
+      <li>B) Cloud groups — a cloud provider term</li>
+      <li>C) CPU groups — only related to processor allocation</li>
+      <li>D) Control groups — a Linux kernel feature for resource management</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Cgroups stands for <strong>Control Groups</strong>. It's a Linux kernel feature (not Docker-specific) that allows limiting, prioritizing, accounting, and controlling the resource usage of process groups. Docker uses cgroups to implement <code>--memory</code>, <code>--cpus</code>, and other resource limit flags on containers.</div>
       </div>
     </details>
@@ -1324,15 +1324,15 @@ docker run hello-world
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">22</span>What is Docker Desktop?</div>
     <ul class="quiz-options">
-      <li>A) A command-line only tool for managing containers</li>
-      <li>B) A GUI application bundling Docker Engine, CLI, and Compose for Mac/Windows/Linux</li>
+      <li>A) A GUI application bundling Docker Engine, CLI, and Compose for Mac/Windows/Linux</li>
+      <li>B) A command-line only tool for managing containers</li>
       <li>C) A cloud-hosted Docker service by Docker Inc.</li>
       <li>D) A type of Docker container used for development</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">Docker Desktop is an all-in-one application that includes Docker Engine (the container runtime), the Docker CLI, Docker Compose, Docker Scan, and a GUI dashboard. It also manages the Linux VM required to run Linux containers on macOS and Windows.</div>
       </div>
     </details>
@@ -1375,15 +1375,15 @@ docker run hello-world
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">25</span>What is the Docker Engine?</div>
     <ul class="quiz-options">
-      <li>A) A game development framework that uses Docker containers</li>
-      <li>B) The core runtime component that creates, runs, and manages containers</li>
+      <li>A) The core runtime component that creates, runs, and manages containers</li>
+      <li>B) A game development framework that uses Docker containers</li>
       <li>C) A cloud hosting service offered by Docker Inc.</li>
       <li>D) A Kubernetes plugin for managing Docker swarms</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">Docker Engine is the core technology that makes containers work. It consists of: the <code>dockerd</code> daemon, a REST API, and the CLI. When you run <code>docker run</code>, the CLI sends a request to the daemon via the API, and the daemon does the actual work of creating/running the container.</div>
       </div>
     </details>
@@ -1394,13 +1394,13 @@ docker run hello-world
     <ul class="quiz-options">
       <li>A) docker list</li>
       <li>B) docker show</li>
-      <li>C) docker ps</li>
-      <li>D) docker containers --active</li>
+      <li>C) docker containers --active</li>
+      <li>D) docker ps</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker ps</code> (ps = process status) shows only running containers by default. To see all containers including stopped ones, use <code>docker ps -a</code>. The output includes Container ID, Image, Command, Created time, Status, Ports, and Name.</div>
       </div>
     </details>
@@ -1508,14 +1508,14 @@ sudo systemctl status docker
     <div class="quiz-q"><span class="q-num">27</span>What is the Docker daemon (dockerd)?</div>
     <ul class="quiz-options">
       <li>A) A type of Docker container used for background tasks</li>
-      <li>B) A background service that manages all Docker objects and responds to API requests</li>
-      <li>C) The Docker command-line interface tool</li>
+      <li>B) The Docker command-line interface tool</li>
+      <li>C) A background service that manages all Docker objects and responds to API requests</li>
       <li>D) A Docker image for running system services</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">The Docker daemon (<code>dockerd</code>) is the server component that runs in the background. It manages all Docker objects (images, containers, networks, volumes) and listens for Docker API requests from clients. The client sends commands; the daemon executes them.</div>
       </div>
     </details>
@@ -1542,14 +1542,14 @@ sudo systemctl status docker
     <div class="quiz-q"><span class="q-num">29</span>What is Docker Hub?</div>
     <ul class="quiz-options">
       <li>A) A local development tool for building images faster</li>
-      <li>B) The default public registry for storing and sharing Docker images</li>
-      <li>C) A container runtime alternative to Docker Engine</li>
-      <li>D) A plugin for connecting Docker containers to networks</li>
+      <li>B) A container runtime alternative to Docker Engine</li>
+      <li>C) A plugin for connecting Docker containers to networks</li>
+      <li>D) The default public registry for storing and sharing Docker images</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Docker Hub (hub.docker.com) is the world's largest container image registry. It hosts official images for most popular software (nginx, postgres, node, python, etc.) and allows developers to publish their own images. When you run <code>docker pull nginx</code>, Docker Hub is the default source.</div>
       </div>
     </details>
@@ -1558,15 +1558,15 @@ sudo systemctl status docker
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">30</span>When you run <code>docker pull ubuntu</code>, which component actually fetches the image?</div>
     <ul class="quiz-options">
-      <li>A) The Docker CLI directly downloads it</li>
-      <li>B) The Docker daemon fetches it from the registry</li>
+      <li>A) The Docker daemon fetches it from the registry</li>
+      <li>B) The Docker CLI directly downloads it</li>
       <li>C) Docker Hub pushes it to your machine</li>
       <li>D) Docker Compose handles all image downloads</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">The CLI just sends the pull command to the daemon via the API. The daemon is the one that actually communicates with the registry (Docker Hub), authenticates if needed, downloads the image layers, and stores them locally. The CLI is just a thin client.</div>
       </div>
     </details>
@@ -1576,14 +1576,14 @@ sudo systemctl status docker
     <div class="quiz-q"><span class="q-num">31</span>Where does the Docker daemon listen by default on Linux?</div>
     <ul class="quiz-options">
       <li>A) /var/run/nginx.sock</li>
-      <li>B) /var/run/docker.sock</li>
-      <li>C) /tmp/docker.sock</li>
+      <li>B) /tmp/docker.sock</li>
+      <li>C) /var/run/docker.sock</li>
       <li>D) /etc/docker/daemon.sock</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain"><code>/var/run/docker.sock</code> is the Unix domain socket that the Docker daemon listens on by default. The Docker CLI connects to this socket to send API requests. Mounting this socket into a container (e.g., in CI/CD pipelines) allows that container to control the host Docker daemon.</div>
       </div>
     </details>
@@ -1593,14 +1593,14 @@ sudo systemctl status docker
     <div class="quiz-q"><span class="q-num">32</span>Which of the following is a Docker object managed by the daemon?</div>
     <ul class="quiz-options">
       <li>A) A JavaScript module file</li>
-      <li>B) A Python virtual environment</li>
-      <li>C) A Docker Image</li>
+      <li>B) A Docker Image</li>
+      <li>C) A Python virtual environment</li>
       <li>D) An HTML webpage</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">Docker objects are entities that Docker manages: Images, Containers, Networks, and Volumes. These are all created, tracked, and managed by the Docker daemon. JavaScript files, Python environments, and HTML pages are application-level files, not Docker objects.</div>
       </div>
     </details>
@@ -1609,15 +1609,15 @@ sudo systemctl status docker
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">33</span>In Docker architecture, what is the Registry responsible for?</div>
     <ul class="quiz-options">
-      <li>A) Running and monitoring containers in production</li>
-      <li>B) Building Docker images from source code</li>
-      <li>C) Storing and distributing Docker images</li>
+      <li>A) Storing and distributing Docker images</li>
+      <li>B) Running and monitoring containers in production</li>
+      <li>C) Building Docker images from source code</li>
       <li>D) Managing container networking and DNS</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">A registry is purely a storage and distribution system for Docker images. It doesn't run containers or build images. You push images to it and pull images from it. Docker Hub is the default public registry, but you can run private registries (e.g., Amazon ECR, Google GCR, self-hosted with <code>registry:2</code> image).</div>
       </div>
     </details>
@@ -1627,14 +1627,14 @@ sudo systemctl status docker
     <div class="quiz-q"><span class="q-num">34</span>When you run <code>docker run ubuntu</code> and the image is not found locally, what does Docker automatically do?</div>
     <ul class="quiz-options">
       <li>A) Returns an error and exits without doing anything</li>
-      <li>B) Pulls the image from the default registry (Docker Hub) and then runs it</li>
-      <li>C) Creates an empty container without any OS</li>
-      <li>D) Asks you to manually download and install the image first</li>
+      <li>B) Creates an empty container without any OS</li>
+      <li>C) Asks you to manually download and install the image first</li>
+      <li>D) Pulls the image from the default registry (Docker Hub) and then runs it</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Docker has a "pull before run" behavior. If the image isn't found locally, it automatically pulls it from the registry configured (Docker Hub by default) before running. You'll see "Unable to find image 'ubuntu:latest' locally" followed by the pull progress. This convenience is why Docker is so easy to get started with.</div>
       </div>
     </details>
@@ -1788,14 +1788,14 @@ docker image prune -a</code></pre>
     <div class="quiz-q"><span class="q-num">36</span>How are Docker images stored internally?</div>
     <ul class="quiz-options">
       <li>A) As a single large file (like a .zip archive)</li>
-      <li>B) As read-only layers stacked on top of each other</li>
-      <li>C) Only as compiled executable binaries</li>
+      <li>B) Only as compiled executable binaries</li>
+      <li>C) As read-only layers stacked on top of each other</li>
       <li>D) As XML configuration files</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">Images use a layered filesystem. Each instruction in a Dockerfile creates a new layer. Layers are read-only and shared between images that have common bases. When you run a container, Docker adds a thin writable layer on top. This design makes images efficient in storage and transfer.</div>
       </div>
     </details>
@@ -1806,13 +1806,13 @@ docker image prune -a</code></pre>
     <ul class="quiz-options">
       <li>A) docker get nginx</li>
       <li>B) docker fetch nginx</li>
-      <li>C) docker pull nginx</li>
-      <li>D) docker download nginx</li>
+      <li>C) docker download nginx</li>
+      <li>D) docker pull nginx</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker pull</code> explicitly downloads an image from a registry. Note that <code>docker run</code> also pulls automatically if the image isn't local. <code>docker pull</code> is useful when you want to pre-download images or update to the latest version of a tagged image.</div>
       </div>
     </details>
@@ -1821,15 +1821,15 @@ docker image prune -a</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">38</span>What does <code>docker images</code> (or <code>docker image ls</code>) display?</div>
     <ul class="quiz-options">
-      <li>A) Downloads and shows a preview of all images on Docker Hub</li>
-      <li>B) Lists all Docker images stored locally on your machine</li>
+      <li>A) Lists all Docker images stored locally on your machine</li>
+      <li>B) Downloads and shows a preview of all images on Docker Hub</li>
       <li>C) Builds all images found in the current directory</li>
       <li>D) Deletes all locally stored images</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>docker images</code> lists all images in your local Docker image cache, showing REPOSITORY, TAG, IMAGE ID, CREATED, and SIZE. The Image ID is a SHA256 hash (truncated). The same image can have multiple tags pointing to it.</div>
       </div>
     </details>
@@ -1874,13 +1874,13 @@ docker image prune -a</code></pre>
     <ul class="quiz-options">
       <li>A) docker delete image nginx</li>
       <li>B) docker remove image nginx</li>
-      <li>C) docker rmi nginx</li>
-      <li>D) docker image kill nginx</li>
+      <li>C) docker image kill nginx</li>
+      <li>D) docker rmi nginx</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker rmi</code> (remove image) deletes a local image. The equivalent modern syntax is <code>docker image rm</code>. If a container (even stopped) is using the image, Docker will refuse to remove it — use <code>-f</code> to force. To remove all unused images, use <code>docker image prune -a</code>.</div>
       </div>
     </details>
@@ -1889,15 +1889,15 @@ docker image prune -a</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">42</span>What does the <code>docker inspect nginx</code> command output?</div>
     <ul class="quiz-options">
-      <li>A) Opens an interactive terminal inside a running nginx container</li>
-      <li>B) Detailed metadata about the image in JSON format (layers, env vars, ports, etc.)</li>
+      <li>A) Detailed metadata about the image in JSON format (layers, env vars, ports, etc.)</li>
+      <li>B) Opens an interactive terminal inside a running nginx container</li>
       <li>C) Network performance statistics for nginx traffic</li>
       <li>D) Real-time CPU and memory usage of nginx</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>docker inspect</code> returns a JSON object with all metadata: the image's layers (RootFS), environment variables, exposed ports, entrypoint, labels, architecture, OS, creation timestamp, and more. It works on both images and containers.</div>
       </div>
     </details>
@@ -1907,14 +1907,14 @@ docker image prune -a</code></pre>
     <div class="quiz-q"><span class="q-num">43</span>What is a "base image" in the context of Docker?</div>
     <ul class="quiz-options">
       <li>A) The largest image stored on Docker Hub</li>
-      <li>B) An image with no parent; the starting point for building other images</li>
-      <li>C) Any image stored on your local disk</li>
+      <li>B) Any image stored on your local disk</li>
+      <li>C) An image with no parent; the starting point for building other images</li>
       <li>D) A compressed backup of all your Docker images</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">A base image is the foundation of a Docker image — it has no parent layer. Common base images include <code>ubuntu</code>, <code>debian</code>, <code>alpine</code>, and <code>scratch</code>. When you write <code>FROM ubuntu:22.04</code> in a Dockerfile, ubuntu:22.04 is your base image.</div>
       </div>
     </details>
@@ -2096,14 +2096,14 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
     <div class="quiz-q"><span class="q-num">45</span>What is a Docker container?</div>
     <ul class="quiz-options">
       <li>A) A Docker image stored on disk in a compressed format</li>
-      <li>B) A running (or stopped) instance created from a Docker image</li>
-      <li>C) A Docker registry for storing images</li>
-      <li>D) A virtual machine that runs on Docker Engine</li>
+      <li>B) A Docker registry for storing images</li>
+      <li>C) A virtual machine that runs on Docker Engine</li>
+      <li>D) A running (or stopped) instance created from a Docker image</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">A container is a running instance of an image — the image is the template, the container is the actual process. The analogy: image is a class (template), container is an object (instance). You can run many containers from the same image simultaneously.</div>
       </div>
     </details>
@@ -2112,15 +2112,15 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">46</span>What does the <code>-d</code> flag do in <code>docker run -d nginx</code>?</div>
     <ul class="quiz-options">
-      <li>A) Runs the container with debug logging enabled</li>
-      <li>B) Runs the container in detached (background) mode</li>
+      <li>A) Runs the container in detached (background) mode</li>
+      <li>B) Runs the container with debug logging enabled</li>
       <li>C) Deletes the container automatically when it stops</li>
       <li>D) Runs the container with root privileges</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">The <code>-d</code> (detached) flag runs the container in the background. The command returns immediately with the container ID, and the container keeps running. Without <code>-d</code>, the container runs in the foreground and you see its output directly — pressing Ctrl+C stops it. To auto-delete on stop, use <code>--rm</code>.</div>
       </div>
     </details>
@@ -2130,14 +2130,14 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
     <div class="quiz-q"><span class="q-num">47</span>In <code>docker run -p 8080:80 nginx</code>, what does <code>-p 8080:80</code> mean?</div>
     <ul class="quiz-options">
       <li>A) The container uses port 8080 internally and port 80 externally</li>
-      <li>B) Traffic arriving at host port 8080 is forwarded to container port 80</li>
-      <li>C) The image version is 8080, build 80</li>
+      <li>B) The image version is 8080, build 80</li>
+      <li>C) Traffic arriving at host port 8080 is forwarded to container port 80</li>
       <li>D) Both ports 8080 and 80 are blocked for security</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">The format is <code>host_port:container_port</code>. So <code>-p 8080:80</code> means: map your machine's port 8080 to the container's port 80. When you visit <code>localhost:8080</code> in your browser, Docker forwards that traffic to nginx listening on port 80 inside the container.</div>
       </div>
     </details>
@@ -2163,15 +2163,15 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">49</span>What does <code>docker ps -a</code> display?</div>
     <ul class="quiz-options">
-      <li>A) Only containers that are currently running</li>
-      <li>B) All containers — both running and stopped</li>
+      <li>A) All containers — both running and stopped</li>
+      <li>B) Only containers that are currently running</li>
       <li>C) All locally stored Docker images</li>
       <li>D) All processes running inside all containers</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>docker ps</code> by default only shows running containers. The <code>-a</code> (all) flag includes stopped, exited, and created containers. This is essential for debugging — if a container exited unexpectedly, you need <code>-a</code> to see it and then <code>docker logs</code> to see why it crashed.</div>
       </div>
     </details>
@@ -2181,14 +2181,14 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
     <div class="quiz-q"><span class="q-num">50</span>What does <code>docker exec -it mycontainer bash</code> do?</div>
     <ul class="quiz-options">
       <li>A) Starts a brand new container named mycontainer using bash</li>
-      <li>B) Opens an interactive bash shell inside the already-running container</li>
-      <li>C) Restarts the container and switches to bash shell mode</li>
-      <li>D) Kills the main bash process running inside the container</li>
+      <li>B) Restarts the container and switches to bash shell mode</li>
+      <li>C) Kills the main bash process running inside the container</li>
+      <li>D) Opens an interactive bash shell inside the already-running container</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker exec</code> runs a command in an EXISTING running container. The <code>-it</code> flags provide an interactive terminal. This is incredibly useful for debugging — you can explore the container's filesystem, check logs, test commands, etc., without stopping the container.</div>
       </div>
     </details>
@@ -2215,14 +2215,14 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
     <div class="quiz-q"><span class="q-num">52</span>The <code>--name</code> flag in <code>docker run</code> is used to:</div>
     <ul class="quiz-options">
       <li>A) Assign a name to a Docker image being built</li>
-      <li>B) Assign a custom name to the container for easy reference</li>
-      <li>C) Name a Docker network to connect to</li>
+      <li>B) Name a Docker network to connect to</li>
+      <li>C) Assign a custom name to the container for easy reference</li>
       <li>D) Set the hostname of the host machine running Docker</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">Without <code>--name</code>, Docker generates a random name (like "jovial_einstein" or "hardcore_tesla"). Using <code>--name</code> lets you use a meaningful name in subsequent commands: <code>docker stop myapp</code>, <code>docker logs myapp</code> instead of using the container ID.</div>
       </div>
     </details>
@@ -2231,15 +2231,15 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">53</span>What does <code>docker logs mycontainer</code> show?</div>
     <ul class="quiz-options">
-      <li>A) The system logs of the host machine where Docker is installed</li>
-      <li>B) The stdout and stderr output produced by the container's main process</li>
+      <li>A) The stdout and stderr output produced by the container's main process</li>
+      <li>B) The system logs of the host machine where Docker is installed</li>
       <li>C) The Docker daemon's own operational logs</li>
       <li>D) All network traffic logs for the container</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">Docker captures stdout and stderr from the container's main process (PID 1). <code>docker logs</code> retrieves this output. Add <code>-f</code> to stream in real-time (like <code>tail -f</code>). This is your primary debugging tool when a container misbehaves. Applications in containers should log to stdout/stderr for this reason.</div>
       </div>
     </details>
@@ -2249,14 +2249,14 @@ docker cp ./nginx.conf web:/etc/nginx/nginx.conf</code></pre>
     <div class="quiz-q"><span class="q-num">54</span>Which command removes all stopped containers in one go?</div>
     <ul class="quiz-options">
       <li>A) docker rm -f all</li>
-      <li>B) docker container prune</li>
-      <li>C) docker remove --all-stopped</li>
-      <li>D) docker clean containers</li>
+      <li>B) docker remove --all-stopped</li>
+      <li>C) docker clean containers</li>
+      <li>D) docker container prune</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker container prune</code> removes all stopped containers. It asks for confirmation first. To also clean up dangling images and unused networks/volumes, use <code>docker system prune</code>. Add <code>-f</code> to skip the confirmation prompt in scripts.</div>
       </div>
     </details>
@@ -2454,14 +2454,14 @@ CMD ["./myserver"]
     <div class="quiz-q"><span class="q-num">55</span>What is a Dockerfile?</div>
     <ul class="quiz-options">
       <li>A) A running script inside a container</li>
-      <li>B) A text file with step-by-step instructions to build a Docker image</li>
-      <li>C) A YAML configuration file for the Docker daemon</li>
+      <li>B) A YAML configuration file for the Docker daemon</li>
+      <li>C) A text file with step-by-step instructions to build a Docker image</li>
       <li>D) The same as a docker-compose.yml file</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">A Dockerfile is a plain text file (named exactly "Dockerfile") containing sequential instructions that Docker reads to build an image. Each instruction creates a layer. It's the blueprint that makes builds reproducible and portable.</div>
       </div>
     </details>
@@ -2471,14 +2471,14 @@ CMD ["./myserver"]
     <div class="quiz-q"><span class="q-num">56</span>Which Dockerfile instruction MUST appear first (or near the top in multi-stage builds) to set the base image?</div>
     <ul class="quiz-options">
       <li>A) BASE</li>
-      <li>B) START</li>
-      <li>C"> FROM</li>
+      <li>B) FROM</li>
+      <li>C) START</li>
       <li>D) IMAGE</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain"><code>FROM</code> must be the first instruction in a Dockerfile (ARG can appear before FROM). It sets the base image that all subsequent instructions build on. Every image must start from something — even if it's <code>FROM scratch</code> (empty).</div>
       </div>
     </details>
@@ -2487,15 +2487,15 @@ CMD ["./myserver"]
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">57</span>What does the <code>RUN</code> instruction do in a Dockerfile?</div>
     <ul class="quiz-options">
-      <li>A) Starts the final application when the container boots</li>
-      <li>B) Executes a command during the image build process, creating a new layer</li>
+      <li>A) Executes a command during the image build process, creating a new layer</li>
+      <li>B) Starts the final application when the container boots</li>
       <li>C) Runs an existing Docker container</li>
       <li>D) Sets environment variables for the build</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>RUN</code> executes commands during the BUILD phase (when you run <code>docker build</code>). It's used to install packages, compile code, create directories, etc. Each <code>RUN</code> creates a new cached layer. To start the app when a container runs, use <code>CMD</code> or <code>ENTRYPOINT</code>.</div>
       </div>
     </details>
@@ -2505,14 +2505,14 @@ CMD ["./myserver"]
     <div class="quiz-q"><span class="q-num">58</span>What is the key difference between <code>CMD</code> and <code>ENTRYPOINT</code> in a Dockerfile?</div>
     <ul class="quiz-options">
       <li>A) There is no practical difference — they are aliases</li>
-      <li>B) CMD provides defaults easily overridden at runtime; ENTRYPOINT sets the main executable that's harder to override</li>
-      <li>C) CMD is for Linux containers; ENTRYPOINT is for Windows containers</li>
-      <li>D) ENTRYPOINT runs at build time; CMD runs at container start</li>
+      <li>B) CMD is for Linux containers; ENTRYPOINT is for Windows containers</li>
+      <li>C) ENTRYPOINT runs at build time; CMD runs at container start</li>
+      <li>D) CMD provides defaults easily overridden at runtime; ENTRYPOINT sets the main executable that's harder to override</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>CMD</code> sets default command/arguments that can be completely replaced: <code>docker run myimage custom-command</code> replaces CMD. <code>ENTRYPOINT</code> sets the executable — you'd need <code>--entrypoint</code> flag to override it. Combined: ENTRYPOINT is the executable, CMD is its default args.</div>
       </div>
     </details>
@@ -2539,14 +2539,14 @@ CMD ["./myserver"]
     <div class="quiz-q"><span class="q-num">60</span>What does <code>WORKDIR /app</code> do in a Dockerfile?</div>
     <ul class="quiz-options">
       <li>A) Creates a new Docker volume named /app</li>
-      <li>B) Sets /app as the working directory; all subsequent instructions run relative to it</li>
-      <li>C) Mounts the /app directory from the host machine into the container</li>
+      <li>B) Mounts the /app directory from the host machine into the container</li>
+      <li>C) Sets /app as the working directory; all subsequent instructions run relative to it</li>
       <li>D) Permanently deletes the /app directory from the image</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain"><code>WORKDIR</code> sets the working directory for subsequent <code>RUN</code>, <code>CMD</code>, <code>ENTRYPOINT</code>, <code>COPY</code>, and <code>ADD</code> instructions. It creates the directory if it doesn't exist. It's equivalent to <code>mkdir -p /app && cd /app</code> but persists across subsequent instructions.</div>
       </div>
     </details>
@@ -2555,15 +2555,15 @@ CMD ["./myserver"]
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">61</span>What is the purpose of a <code>.dockerignore</code> file?</div>
     <ul class="quiz-options">
-      <li>A) To suppress Docker warnings during builds</li>
-      <li>B) To exclude files and directories from the build context sent to Docker</li>
+      <li>A) To exclude files and directories from the build context sent to Docker</li>
+      <li>B) To suppress Docker warnings during builds</li>
       <li>C) To disable certain Dockerfile instructions</li>
       <li>D) To ignore network errors during image pulling</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">Like <code>.gitignore</code>, a <code>.dockerignore</code> file specifies files to exclude from the build context. This speeds up builds (less data transferred to daemon), avoids accidentally including secrets (<code>.env</code>), and prevents large directories like <code>node_modules</code> from being needlessly sent.</div>
       </div>
     </details>
@@ -2574,13 +2574,13 @@ CMD ["./myserver"]
     <ul class="quiz-options">
       <li>A) docker create -t myapp .</li>
       <li>B) docker make myapp .</li>
-      <li>C) docker build -t myapp:1.0 .</li>
-      <li>D) docker image new myapp .</li>
+      <li>C) docker image new myapp .</li>
+      <li>D) docker build -t myapp:1.0 .</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker build</code> is the command that reads a Dockerfile and builds an image. <code>-t</code> tags the image with name:version. The <code>.</code> at the end specifies the build context (current directory). Docker sends this context to the daemon, which uses it along with the Dockerfile.</div>
       </div>
     </details>
@@ -2589,15 +2589,15 @@ CMD ["./myserver"]
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">63</span>In <code>docker build -t myapp:1.0 .</code>, what does the trailing <code>.</code> represent?</div>
     <ul class="quiz-options">
-      <li>A) The current directory as the build context (files available during build)</li>
-      <li>B) A version separator in the tag</li>
+      <li>A) A version separator in the tag</li>
+      <li>B) The current directory as the build context (files available during build)</li>
       <li>C) All files currently on Docker Hub for this image</li>
       <li>D) The location of the Dockerfile (always current directory)</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: A</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">The <code>.</code> specifies the <strong>build context</strong> — the directory whose contents are sent to the Docker daemon. The daemon then uses files from this context when processing <code>COPY</code> instructions. The Dockerfile itself is expected to be in this directory, but you can override it with <code>-f path/to/Dockerfile</code>.</div>
       </div>
     </details>
@@ -2607,14 +2607,14 @@ CMD ["./myserver"]
     <div class="quiz-q"><span class="q-num">64</span>What is the main benefit of a multi-stage build in Docker?</div>
     <ul class="quiz-options">
       <li>A) It builds the same image on multiple Docker registries simultaneously</li>
-      <li>B) It creates a smaller final image by discarding build tools and intermediate files, keeping only the runtime artifacts</li>
-      <li>C) It allows running multiple containers from a single Dockerfile</li>
+      <li>B) It allows running multiple containers from a single Dockerfile</li>
+      <li>C) It creates a smaller final image by discarding build tools and intermediate files, keeping only the runtime artifacts</li>
       <li>D) It lets you have multiple CMD instructions in one Dockerfile</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">Multi-stage builds use multiple FROM statements. The first stage might have a full compiler toolchain to build your app; the final stage only copies the compiled binary. The result is a tiny production image without any build tools. A Go app might shrink from 800MB to 15MB this way.</div>
       </div>
     </details>
@@ -2624,14 +2624,14 @@ CMD ["./myserver"]
     <div class="quiz-q"><span class="q-num">65</span>The <code>ENV NODE_ENV=production</code> instruction in a Dockerfile:</div>
     <ul class="quiz-options">
       <li>A) Sets an environment variable available ONLY during the build</li>
-      <li>B) Sets an environment variable available during both build time and at container runtime</li>
-      <li>C) Encrypts all environment data in the image</li>
-      <li>D) Defines which Node.js entrypoint script to execute</li>
+      <li>B) Encrypts all environment data in the image</li>
+      <li>C) Defines which Node.js entrypoint script to execute</li>
+      <li>D) Sets an environment variable available during both build time and at container runtime</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>ENV</code> variables are persisted in the image and available at runtime. They can be overridden when running a container with <code>docker run -e NODE_ENV=development</code>. Be careful: never use <code>ENV</code> for secrets (passwords, API keys) as they're visible in <code>docker inspect</code>.</div>
       </div>
     </details>
@@ -2640,15 +2640,15 @@ CMD ["./myserver"]
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">66</span>What does <code>EXPOSE 8080</code> in a Dockerfile actually do?</div>
     <ul class="quiz-options">
-      <li>A) Opens port 8080 on the host machine automatically</li>
-      <li>B) Documents that the container listens on port 8080, but does not actually publish it</li>
+      <li>A) Documents that the container listens on port 8080, but does not actually publish it</li>
+      <li>B) Opens port 8080 on the host machine automatically</li>
       <li>C) Forwards all traffic to port 8080 inside the container</li>
       <li>D) Blocks all traffic except port 8080</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>EXPOSE</code> is documentation — it tells users and tools that the container listens on that port, but it doesn't actually publish it to the host. To make it accessible from outside, you still need <code>-p 8080:8080</code> (or <code>-P</code> to auto-publish all exposed ports to random host ports).</div>
       </div>
     </details>
@@ -2781,14 +2781,14 @@ docker run -d \
     <div class="quiz-q"><span class="q-num">67</span>Why are Docker volumes needed?</div>
     <ul class="quiz-options">
       <li>A) To make containers start faster by pre-loading data</li>
-      <li>B) Because container filesystems are ephemeral — volumes persist data beyond container deletion</li>
-      <li>C) To connect containers to the internet</li>
+      <li>B) To connect containers to the internet</li>
+      <li>C) Because container filesystems are ephemeral — volumes persist data beyond container deletion</li>
       <li>D) To reduce the size of Docker images</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">When a container is removed, its writable layer is deleted. Any data written to the container's filesystem is gone. Volumes solve this by storing data outside the container lifecycle. Critical for databases, file uploads, logs — anything that must survive container restarts/deletions.</div>
       </div>
     </details>
@@ -2815,14 +2815,14 @@ docker run -d \
     <div class="quiz-q"><span class="q-num">69</span>Which command creates a new named Docker volume?</div>
     <ul class="quiz-options">
       <li>A) docker storage create mydata</li>
-      <li>B) docker volume create mydata</li>
-      <li>C) docker mount create mydata</li>
-      <li>D) docker data new mydata</li>
+      <li>B) docker mount create mydata</li>
+      <li>C) docker data new mydata</li>
+      <li>D) docker volume create mydata</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker volume create &lt;name&gt;</code> creates a named volume. You can also let Docker create it automatically by using it in <code>docker run -v mydata:/path</code> — if "mydata" doesn't exist, Docker creates it. Volumes can be shared between multiple containers simultaneously.</div>
       </div>
     </details>
@@ -2831,15 +2831,15 @@ docker run -d \
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">70</span>What does a bind mount in Docker do?</div>
     <ul class="quiz-options">
-      <li>A) Mounts a Docker-managed named volume into the container</li>
-      <li>B) Mounts a specific directory from the host machine into the container</li>
+      <li>A) Mounts a specific directory from the host machine into the container</li>
+      <li>B) Mounts a Docker-managed named volume into the container</li>
       <li>C) Creates a temporary in-memory filesystem inside the container</li>
       <li>D) Connects two running containers' filesystems together</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">A bind mount maps a specific directory from your host (e.g., <code>/home/user/myapp</code>) to a path inside the container. Both see the same files — changes on either side are instantly visible. This is essential for development workflows where you want live code reload.</div>
       </div>
     </details>
@@ -2849,14 +2849,14 @@ docker run -d \
     <div class="quiz-q"><span class="q-num">71</span>What is a tmpfs mount in Docker?</div>
     <ul class="quiz-options">
       <li>A) A permanent storage location managed by Docker on disk</li>
-      <li>B) A temporary filesystem stored in the host's RAM — data is not persisted to disk</li>
-      <li>C) A network-attached storage volume</li>
+      <li>B) A network-attached storage volume</li>
+      <li>C) A temporary filesystem stored in the host's RAM — data is not persisted to disk</li>
       <li>D) A compressed disk volume for large databases</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">tmpfs (temporary file system) mounts are stored in host RAM, never touching disk. They're faster than disk storage and more secure for sensitive data (passwords, session tokens) since data disappears when the container stops. Used for sensitive scratch space that shouldn't be written to disk.</div>
       </div>
     </details>
@@ -2866,14 +2866,14 @@ docker run -d \
     <div class="quiz-q"><span class="q-num">72</span>Which <code>docker run</code> flag is used to mount a volume or bind mount?</div>
     <ul class="quiz-options">
       <li>A) --storage</li>
-      <li>B) --attach</li>
-      <li>C) -v or --mount</li>
+      <li>B) -v or --mount</li>
+      <li>C) --attach</li>
       <li>D) --disk</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">Both <code>-v</code> and <code>--mount</code> attach storage to containers. <code>-v volume:/path</code> is the short form; <code>--mount type=volume,source=vol,target=/path</code> is the explicit long form. <code>--mount</code> is recommended for new code as it's more readable and supports all options.</div>
       </div>
     </details>
@@ -2883,14 +2883,14 @@ docker run -d \
     <div class="quiz-q"><span class="q-num">73</span>On Linux, where does Docker store named volumes by default?</div>
     <ul class="quiz-options">
       <li>A) /home/docker/volumes/</li>
-      <li>B) /var/lib/docker/volumes/</li>
-      <li>C) /tmp/docker/volumes/</li>
-      <li>D) /etc/docker/volumes/</li>
+      <li>B) /tmp/docker/volumes/</li>
+      <li>C) /etc/docker/volumes/</li>
+      <li>D) /var/lib/docker/volumes/</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Docker stores all its data under <code>/var/lib/docker/</code> on Linux — including images, containers, and volumes. Named volumes are in <code>/var/lib/docker/volumes/&lt;volume-name&gt;/_data/</code>. You can verify this with <code>docker volume inspect &lt;name&gt;</code> which shows the "Mountpoint".</div>
       </div>
     </details>
@@ -2899,15 +2899,15 @@ docker run -d \
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">74</span>Which command lists all Docker volumes on your system?</div>
     <ul class="quiz-options">
-      <li>A) docker storage ls</li>
-      <li>B) docker volume ls</li>
-      <li>C"> docker mount list</li>
+      <li>A) docker volume ls</li>
+      <li>B) docker storage ls</li>
+      <li>C) docker mount list</li>
       <li>D) docker disk show</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>docker volume ls</code> lists all volumes (both named and anonymous). The output shows DRIVER and VOLUME NAME. To remove unused volumes, use <code>docker volume prune</code>. To see details about a specific volume (like its host path), use <code>docker volume inspect &lt;name&gt;</code>.</div>
       </div>
     </details>
@@ -3051,14 +3051,14 @@ docker run -d --name myapp \
     <div class="quiz-q"><span class="q-num">75</span>What is the default network driver used when you run a container without specifying a network?</div>
     <ul class="quiz-options">
       <li>A) host</li>
-      <li>B) overlay</li>
-      <li>C) bridge</li>
+      <li>B) bridge</li>
+      <li>C) overlay</li>
       <li>D) macvlan</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">The <strong>bridge</strong> driver is Docker's default. When you run a container without specifying <code>--network</code>, it attaches to the default bridge network called "bridge". Containers on the default bridge can communicate by IP but not by name. For name-based communication, create a user-defined bridge network.</div>
       </div>
     </details>
@@ -3068,14 +3068,14 @@ docker run -d --name myapp \
     <div class="quiz-q"><span class="q-num">76</span>On a user-defined bridge network, how can containers find each other?</div>
     <ul class="quiz-options">
       <li>A) Only via the host machine's IP address</li>
-      <li>B) Directly by container name, using Docker's built-in DNS</li>
-      <li>C) Only through Docker Hub's registry service</li>
+      <li>B) Only through Docker Hub's registry service</li>
+      <li>C) Directly by container name, using Docker's built-in DNS</li>
       <li>D) They cannot communicate on a user-defined bridge</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">User-defined bridge networks include Docker's embedded DNS server. When a container is named "db", any other container on the same network can resolve "db" to its IP address. This makes service discovery easy: your app can connect to <code>db:5432</code> without knowing the actual IP.</div>
       </div>
     </details>
@@ -3084,15 +3084,15 @@ docker run -d --name myapp \
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">77</span>What does the <code>host</code> network mode do?</div>
     <ul class="quiz-options">
-      <li>A) Completely isolates the container from all network traffic</li>
-      <li>B) Removes the network namespace — the container shares the host's full network stack</li>
+      <li>A) Removes the network namespace — the container shares the host's full network stack</li>
+      <li>B) Completely isolates the container from all network traffic</li>
       <li>C) Creates a virtual network between containers on different machines</li>
       <li>D) Connects the container to Docker Hub's network directly</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">With <code>--network host</code>, the container has no network namespace of its own — it uses the host's network directly. Port 80 inside the container IS port 80 on the host. No <code>-p</code> mapping needed. Benefit: best performance. Drawback: no network isolation, port conflicts possible.</div>
       </div>
     </details>
@@ -3103,13 +3103,13 @@ docker run -d --name myapp \
     <ul class="quiz-options">
       <li>A) It is the default networking for all new containers</li>
       <li>B) Multi-host networking for Docker Swarm</li>
-      <li>C) Completely disabling all networking for a container</li>
-      <li>D) Connecting a container to your Wi-Fi network</li>
+      <li>C) Connecting a container to your Wi-Fi network</li>
+      <li>D) Completely disabling all networking for a container</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">The <code>none</code> driver removes the container from all networks — it has no network interface (except loopback). Useful for batch processing jobs that shouldn't have internet access, or for maximum security isolation. <code>docker run --network none myimage</code></div>
       </div>
     </details>
@@ -3119,14 +3119,14 @@ docker run -d --name myapp \
     <div class="quiz-q"><span class="q-num">79</span>The <code>overlay</code> network driver is primarily used for:</div>
     <ul class="quiz-options">
       <li>A) Single-host container-to-container communication</li>
-      <li>B) Multi-host container communication in Docker Swarm clusters</li>
-      <li>C) Connecting containers to external databases</li>
+      <li>B) Connecting containers to external databases</li>
+      <li>C) Multi-host container communication in Docker Swarm clusters</li>
       <li>D) Monitoring network traffic between containers</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">The <code>overlay</code> driver creates a distributed virtual network that spans multiple Docker hosts in a Swarm cluster. Containers on different machines can communicate as if on the same local network. Kubernetes uses similar networking concepts with its CNI (Container Network Interface) plugins.</div>
       </div>
     </details>
@@ -3152,15 +3152,15 @@ docker run -d --name myapp \
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">81</span>Which command creates a custom user-defined Docker network?</div>
     <ul class="quiz-options">
-      <li>A) docker net create mynetwork</li>
-      <li>B"> docker network new mynetwork</li>
-      <li>C) docker network create mynetwork</li>
+      <li>A) docker network create mynetwork</li>
+      <li>B) docker net create mynetwork</li>
+      <li>C) docker network new mynetwork</li>
       <li>D) docker create network mynetwork</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>docker network create &lt;name&gt;</code> creates a new bridge network by default. You can specify the driver with <code>--driver</code> (e.g., <code>--driver overlay</code>). Docker Compose automatically creates a network for each compose project, but for standalone containers, you create it manually.</div>
       </div>
     </details>
@@ -3170,14 +3170,14 @@ docker run -d --name myapp \
     <div class="quiz-q"><span class="q-num">82</span>What does <code>docker network inspect mynetwork</code> show?</div>
     <ul class="quiz-options">
       <li>A) Tests the network speed between containers</li>
-      <li>B) Detailed JSON info about the network including connected containers and their IPs</li>
-      <li>C) Connects a new container to the network</li>
-      <li>D) Creates a new subnet configuration for the network</li>
+      <li>B) Connects a new container to the network</li>
+      <li>C) Creates a new subnet configuration for the network</li>
+      <li>D) Detailed JSON info about the network including connected containers and their IPs</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker network inspect</code> returns detailed JSON metadata: the network's subnet, gateway, connected containers with their IPv4/IPv6 addresses and MAC addresses, and labels. It's the main debugging tool for container networking issues.</div>
       </div>
     </details>
@@ -3353,14 +3353,14 @@ API_KEY=abc123</code></pre>
     <div class="quiz-q"><span class="q-num">83</span>What is Docker Compose primarily used for?</div>
     <ul class="quiz-options">
       <li>A) Compressing Docker images before pushing to registries</li>
-      <li>B) Defining and running multi-container Docker applications from a single YAML file</li>
-      <li>C) Managing Docker daemon configuration on production servers</li>
+      <li>B) Managing Docker daemon configuration on production servers</li>
+      <li>C) Defining and running multi-container Docker applications from a single YAML file</li>
       <li>D) Monitoring resource usage of running containers</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">Docker Compose allows you to define an entire application stack (web server, database, cache, etc.) in a <code>docker-compose.yml</code> file and manage it with simple commands. Instead of running 5 separate <code>docker run</code> commands with many flags, you run <code>docker compose up</code>.</div>
       </div>
     </details>
@@ -3370,14 +3370,14 @@ API_KEY=abc123</code></pre>
     <div class="quiz-q"><span class="q-num">84</span>What is the default filename Docker Compose looks for?</div>
     <ul class="quiz-options">
       <li>A) docker.yaml</li>
-      <li>B) compose.json</li>
-      <li>C) docker-compose.yml</li>
+      <li>B) docker-compose.yml</li>
+      <li>C) compose.json</li>
       <li>D) Dockerfile.compose</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain">Docker Compose looks for <code>docker-compose.yml</code> (or <code>docker-compose.yaml</code>) by default. Newer versions also recognize <code>compose.yml</code> / <code>compose.yaml</code>. You can specify a different file with <code>-f</code>: <code>docker compose -f prod.yml up</code>.</div>
       </div>
     </details>
@@ -3388,13 +3388,13 @@ API_KEY=abc123</code></pre>
     <ul class="quiz-options">
       <li>A) docker compose start</li>
       <li>B) docker compose run --all</li>
-      <li>C) docker compose up</li>
-      <li>D) docker compose launch</li>
+      <li>C) docker compose launch</li>
+      <li>D) docker compose up</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>docker compose up</code> creates and starts all services. If images need to be built, it builds them first. It also creates the required networks and volumes. Add <code>-d</code> for background mode. <code>docker compose start</code> exists but only starts existing stopped services (doesn't create new ones).</div>
       </div>
     </details>
@@ -3403,15 +3403,15 @@ API_KEY=abc123</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">86</span>What does <code>docker compose down</code> do?</div>
     <ul class="quiz-options">
-      <li>A) Pauses all running services temporarily</li>
-      <li>B) Stops and removes the containers and networks created by <code>up</code>, preserving volumes</li>
+      <li>A) Stops and removes the containers and networks created by <code>up</code>, preserving volumes</li>
+      <li>B) Pauses all running services temporarily</li>
       <li>C) Deletes all volumes and images associated with the project</li>
       <li>D) Stops only the first defined service in the YAML file</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>docker compose down</code> stops containers, removes them, and removes the networks created by Compose. Volumes are preserved by default (to protect data). To also delete volumes, add <code>-v</code>. To also remove images, add <code>--rmi all</code>.</div>
       </div>
     </details>
@@ -3438,14 +3438,14 @@ API_KEY=abc123</code></pre>
     <div class="quiz-q"><span class="q-num">88</span>How do you view real-time logs for all services in Docker Compose?</div>
     <ul class="quiz-options">
       <li>A) docker compose debug --all</li>
-      <li>B) docker compose logs -f</li>
-      <li>C) docker compose output --stream</li>
+      <li>B) docker compose output --stream</li>
+      <li>C) docker compose logs -f</li>
       <li>D) docker logs --compose all</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain"><code>docker compose logs</code> shows logs from all services. Adding <code>-f</code> follows/streams the output in real-time (like <code>tail -f</code>). Logs from each service are color-coded and prefixed with the service name. To see logs for one service: <code>docker compose logs -f web</code>.</div>
       </div>
     </details>
@@ -3454,15 +3454,15 @@ API_KEY=abc123</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">89</span>What does the <code>build: .</code> key in a docker-compose.yml service definition mean?</div>
     <ul class="quiz-options">
-      <li>A) Pull the image from Docker Hub automatically</li>
-      <li>B) Build the image from the Dockerfile in the current directory instead of pulling</li>
+      <li>A) Build the image from the Dockerfile in the current directory instead of pulling</li>
+      <li>B) Pull the image from Docker Hub automatically</li>
       <li>C) Build the network configuration for the service</li>
       <li>D) Create a compressed version of the service's filesystem</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">When you specify <code>build: .</code>, Compose builds a Docker image using the Dockerfile in that directory. If you specify both <code>image:</code> and <code>build:</code>, Compose builds and tags the image with the name from <code>image:</code>. Use <code>--build</code> flag to force rebuild: <code>docker compose up --build</code>.</div>
       </div>
     </details>
@@ -3472,14 +3472,14 @@ API_KEY=abc123</code></pre>
     <div class="quiz-q"><span class="q-num">90</span>Which flag starts all Docker Compose services in background mode?</div>
     <ul class="quiz-options">
       <li>A) docker compose up --background</li>
-      <li>B) docker compose up -d</li>
-      <li>C) docker compose up --silent</li>
-      <li>D) docker compose up --detach-all</li>
+      <li>B) docker compose up --silent</li>
+      <li>C) docker compose up --detach-all</li>
+      <li>D) docker compose up -d</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain"><code>-d</code> stands for "detached" in both <code>docker run</code> and <code>docker compose up</code>. Services run in the background and the terminal is free. Use <code>docker compose logs -f</code> to watch logs afterward. Production deployments typically always use <code>-d</code>.</div>
       </div>
     </details>
@@ -3505,15 +3505,15 @@ API_KEY=abc123</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">92</span>In docker-compose.yml, a <code>volumes:</code> section at the top level (not inside a service) defines:</div>
     <ul class="quiz-options">
-      <li>A"> Environment variables shared between services</li>
-      <li>B) Named volumes that can be shared between services and persist beyond container restarts</li>
-      <li>C) The number of volume replicas to maintain</li>
+      <li>A) Environment variables shared between services</li>
+      <li>B) The number of volume replicas to maintain</li>
+      <li>C) Named volumes that can be shared between services and persist beyond container restarts</li>
       <li>D) Disk quotas for each service</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">Top-level <code>volumes:</code> in docker-compose.yml declares named volumes. These are created by Docker and persist even when containers are removed. Multiple services can mount the same volume. Example: <code>volumes: dbdata:</code> creates a volume called <code>projectname_dbdata</code>. Removed with <code>docker compose down -v</code>.</div>
       </div>
     </details>
@@ -3626,14 +3626,14 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
     <div class="quiz-q"><span class="q-num">93</span>What is Docker Hub?</div>
     <ul class="quiz-options">
       <li>A) A local tool for storing Docker images on your laptop</li>
-      <li>B) The default public cloud registry for storing and sharing Docker images</li>
-      <li>C) A Docker networking management tool</li>
-      <li>D) A container performance monitoring service</li>
+      <li>B) A Docker networking management tool</li>
+      <li>C) A container performance monitoring service</li>
+      <li>D) The default public cloud registry for storing and sharing Docker images</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">Docker Hub (hub.docker.com) is the world's largest container registry. It hosts official images (nginx, postgres, python, etc.) and community images. Free tier allows unlimited public repos and limited private repos. When you <code>docker pull nginx</code>, it comes from Docker Hub by default.</div>
       </div>
     </details>
@@ -3642,15 +3642,15 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">94</span>Which command logs you into Docker Hub from the CLI?</div>
     <ul class="quiz-options">
-      <li>A) docker auth login hub.docker.com</li>
-      <li>B) docker registry signin</li>
-      <li>C) docker login</li>
+      <li>A) docker login</li>
+      <li>B) docker auth login hub.docker.com</li>
+      <li>C) docker registry signin</li>
       <li>D) docker connect hub</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain"><code>docker login</code> authenticates with Docker Hub (or another registry with <code>docker login registry.url</code>). Credentials are stored in <code>~/.docker/config.json</code> (as base64 or via a credential store). Required before pushing private images or to avoid Docker Hub pull rate limits.</div>
       </div>
     </details>
@@ -3677,14 +3677,14 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
     <div class="quiz-q"><span class="q-num">96</span>Which command uploads a local image to Docker Hub?</div>
     <ul class="quiz-options">
       <li>A) docker send</li>
-      <li>B) docker upload</li>
-      <li>C) docker push</li>
+      <li>B) docker push</li>
+      <li>C) docker upload</li>
       <li>D) docker publish</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: C</div>
+        <div class="answer-correct">✅ Correct Answer: B</div>
         <div class="answer-explain"><code>docker push username/image:tag</code> uploads the image to the registry. Docker is smart about it — it only uploads layers that don't already exist in the registry. If you change one small file and rebuild, only that new layer is pushed, not the entire image. You must be logged in with <code>docker login</code> first.</div>
       </div>
     </details>
@@ -3693,15 +3693,15 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
   <div class="quiz-block">
     <div class="quiz-q"><span class="q-num">97</span>What is a private Docker registry?</div>
     <ul class="quiz-options">
-      <li>A) A secret registry only accessible to Docker Inc. employees</li>
-      <li>B) A registry (self-hosted or cloud-managed) where images are not publicly accessible</li>
+      <li>A) A registry (self-hosted or cloud-managed) where images are not publicly accessible</li>
+      <li>B) A secret registry only accessible to Docker Inc. employees</li>
       <li>C) A registry that is in the process of being deleted</li>
       <li>D) A registry stored as a repository on GitHub</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: A</div>
         <div class="answer-explain">A private registry stores images that require authentication to access. Options include Docker Hub private repos (paid plan), Amazon ECR, Google Artifact Registry, GitHub Container Registry, Azure ACR, or running the <code>registry:2</code> Docker image yourself. Private registries are essential for proprietary application code.</div>
       </div>
     </details>
@@ -3711,14 +3711,14 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
     <div class="quiz-q"><span class="q-num">98</span>What does the tag <code>node:18-alpine</code> tell you about the image?</div>
     <ul class="quiz-options">
       <li>A) It tags a running container named node with Alpine Linux settings</li>
-      <li>B) Node.js version 18 built on top of Alpine Linux (a minimal, lightweight OS)</li>
-      <li>C) It sets a 18-second timeout for the node container</li>
-      <li>D) It defines resource limits for the container</li>
+      <li>B) It sets a 18-second timeout for the node container</li>
+      <li>C) It defines resource limits for the container</li>
+      <li>D) Node.js version 18 built on top of Alpine Linux (a minimal, lightweight OS)</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: D</div>
         <div class="answer-explain">The tag encodes both the software version (18 = Node.js v18) and the OS variant (alpine = Alpine Linux). Alpine is a minimal Linux distribution (~5MB) versus the default Debian/Ubuntu base (~900MB). <code>node:18-alpine</code> is ~120MB vs <code>node:18</code> at ~900MB — a massive size difference for production images.</div>
       </div>
     </details>
@@ -3728,14 +3728,14 @@ docker pull myusername/myapp:1.0   # Verifies the signature</code></pre>
     <div class="quiz-q"><span class="q-num">99</span>What is Docker Content Trust (DCT)?</div>
     <ul class="quiz-options">
       <li>A) A subscription service for premium Docker Hub storage</li>
-      <li>B) A security feature that uses digital signatures to verify image authenticity before pulling</li>
-      <li>C) A monitoring tool for tracking container performance</li>
+      <li>B) A monitoring tool for tracking container performance</li>
+      <li>C) A security feature that uses digital signatures to verify image authenticity before pulling</li>
       <li>D) A service that automatically backs up registry images</li>
     </ul>
     <details class="quiz-answer">
       <summary>Show Answer &amp; Explanation</summary>
       <div class="answer-body">
-        <div class="answer-correct">✅ Correct Answer: B</div>
+        <div class="answer-correct">✅ Correct Answer: C</div>
         <div class="answer-explain">Docker Content Trust (DCT) uses The Update Framework (TUF) to sign and verify images using cryptographic signatures. When enabled (<code>DOCKER_CONTENT_TRUST=1</code>), Docker refuses to pull unsigned images. This protects against man-in-the-middle attacks and ensures you run exactly what the publisher intended.</div>
       </div>
     </details>
